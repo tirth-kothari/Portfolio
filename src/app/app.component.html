@@ -1,0 +1,12 @@
+<div>
+  <app-header (featureSelected)="onNavigate($event)"></app-header>
+</div>
+<div class="container">
+  <app-education *ngIf="loadedFeature === 'education'"></app-education>
+  <app-experience *ngIf="loadedFeature === 'experience'"></app-experience>
+  <app-projects *ngIf="loadedFeature === 'Projects'"></app-projects>
+  <app-detail *ngIf="loadedFeature === 'Details'"></app-detail>
+</div>
+<div class="center">
+  Contact: tirthkothari7316@gmail.com
+</div>
